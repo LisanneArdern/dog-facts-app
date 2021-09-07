@@ -1,19 +1,20 @@
 import './App.css'
-// import dogFacts from './data.json'
+import Card from './components/Card'
+import dogFacts from './data.json'
 
 export default function App() {
   return (
     <div className="App">
-     {/* {dogFacts.map(dogFact => {
+     {dogFacts.map(dogFact => {
         const { fact, id } = dogFact
         return (
-          <div key={id}>{fact}</div>
+          <Card key={id} fact={fact}/>
             
             
             
          
         )
-      })} */}
+      })}
     </div>
   )
 }
